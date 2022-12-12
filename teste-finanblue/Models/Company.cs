@@ -13,8 +13,6 @@ namespace teste_finanblue.Models
 
         [Required]
         public string? name { get; set; }
-
-        [Required]
         public DateTime createDate { get; set; } = DateTime.UtcNow;
 
         [Required]

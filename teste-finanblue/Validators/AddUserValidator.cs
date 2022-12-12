@@ -13,7 +13,7 @@ namespace teste_finanblue.Validators
                 .MaximumLength(50)
                     .WithMessage("O nome precisa ter até 50 caracteres")
                 .MinimumLength(5)
-                    .WithMessage("O nome precisa ter mais de 5 caracteres");
+                    .WithMessage("O nome precisa ter ao menos 5 caracteres");
 
             RuleFor(m => m.email)
                 .NotEmpty()
@@ -24,10 +24,8 @@ namespace teste_finanblue.Validators
             RuleFor(m => m.password)
                 .NotEmpty()
                     .WithMessage("A senha não pode ser vazia")
-                .MaximumLength(50)
-                    .WithMessage("A senha precisa ter até 50 caracteres")
                 .MinimumLength(5)
-                    .WithMessage("A senha precisa ter mais de 5 caracteres");
+                    .WithMessage("A senha precisa ter ao menos 5 caracteres");
         }
     }
 }
