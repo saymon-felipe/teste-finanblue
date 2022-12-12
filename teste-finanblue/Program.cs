@@ -1,3 +1,4 @@
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +9,7 @@ using teste_finanblue.Repositories;
 using teste_finanblue.Repositories.Interfaces;
 using teste_finanblue.Services;
 using teste_finanblue.Services.Interfaces;
+using teste_finanblue.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -60,6 +62,11 @@ builder.Services.AddAuthorization(options =>
 
     options.DefaultPolicy = defaultAuthorizationPolicyBuilder.Build();
 });
+
+builder.Services.AddControllers()
+    .AddFluentValidation(config => config.RegisterValidatorsFromAssemblyContaining<AddUserValidator>())
+    .AddFluentValidation(config => config.RegisterValidatorsFromAssemblyContaining<AddCompanyValidator>())
+    .AddFluentValidation(config => config.RegisterValidatorsFromAssemblyContaining<AddProductValidator>());
 
 var app = builder.Build();
 

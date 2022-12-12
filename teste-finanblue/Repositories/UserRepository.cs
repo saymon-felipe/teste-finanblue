@@ -23,7 +23,13 @@ namespace teste_finanblue.Repositories
 
         public async Task<List<User>> ReturnAllUsers()
         {
-            return await _dbContext.Users.ToListAsync();
+            List<User> users = await _dbContext.Users.ToListAsync();
+            for (var i = 0; i < users.Count; i++)
+            {
+                var currentUser = users[i];
+                currentUser.password = "";
+            }
+            return users;
         }
 
         public async Task<User> ReturnUserByLogin(string email, string password)

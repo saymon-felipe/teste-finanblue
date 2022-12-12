@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "StzMnE0XoWzl6jpUjyAnufYq04UECKLwCk6iPgt19LkY0ssogTZw6LqSnmCF6dpvfO3l+kx2CgAqKdoFKE8khw==",
+  "dgSpecHash": "Sxa3cO3HJj74OZhhJ+qzz8rMLlGGQBhmbktS/yIxfxfhOeKeQe/7P5fyxcv3ipQvjBh0J4J5L5aIjRAUZNcs3w==",
   "success": true,
   "projectFilePath": "D:\\Workspace\\ws-github\\teste-finanblue\\teste-finanblue\\teste-finanblue.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\linnu\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\linnu\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\linnu\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\linnu\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\linnu\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\linnu\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

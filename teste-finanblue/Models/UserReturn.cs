@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace teste_finanblue.Models
 {
-    public class User
+    public class UserReturn
     {
         [Required]
         public int id { get; set; }
@@ -12,7 +12,5 @@ namespace teste_finanblue.Models
 
         [Required]
         public string? email { get; set; }
-
-        public string? password { get; set; }
     }
 }
